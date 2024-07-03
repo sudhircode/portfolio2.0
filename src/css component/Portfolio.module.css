@@ -1,0 +1,75 @@
+.main_portfolio {
+  width: 97vw;
+  position: relative;
+  left: -5px;
+}
+
+.name {
+  font-size: clamp(5rem, 20vw, 15rem);
+  transform: scaleY(2);
+  font-weight: bold;
+  text-align: center;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  width: 95vw;
+  height: auto;
+  margin: 70px auto;
+}
+
+.sticky {
+  text-align: center;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 90vh;
+  border-radius: 8px;
+  transition: width 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.sticky .stWidth {
+  border-radius: 5px;
+  width: 70%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgrey;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.sticky div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky img {
+  padding: 5px;
+  border-radius: 10px;
+  min-width: 180px;
+  width: 45%;
+  height: auto;
+}
+
+.sticky1 {
+  position: sticky;
+  top: 100px;
+}
+
+.sticky2 {
+  position: sticky;
+  top: 140px;
+}
+
+.sticky3 {
+  position: sticky;
+  top: 180px;
+}
+
+.sticky4 {
+  position: sticky;
+  top: 220px;
+}
+
+.sticky5 {
+  position: sticky;
+  top: 260px;
+}

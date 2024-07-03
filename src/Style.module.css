@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  user-select: none;
+
+}
+
+/* ::-webkit-scrollbar {
+  width: 0px;
+} */
+
+.eager {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* --------------------------Begin_anim------------------- */
+
+.imageRow {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.imageRow div {
+  display: flex;
+  gap: 10px;
+  padding: 3px;
+  height: 36vh;
+  animation: img 5s linear forwards;
+
+}
+
+@keyframes img{
+  100%{
+    transform: translateX(-160vw);
+  }
+}
+
+
+
+
+
+/* --------------------AFTER-----------INTRO--------------------- */
+
+
+/* fonts types---
+@font-face {
+    font-family: 'Editorial New';
+    src: url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/63273dbbf8acefbabe7185b2_PPEditorialNew-Ultralight.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/63273d9d0bde35548b0ab48f_PPEditorialNew-Ultralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Editorial New';
+    src: url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/63273ddb7de61075c819330d_PPEditorialNew-UltralightItalic.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/63273dcc4d23beeb5238a934_PPEditorialNew-UltralightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Mori';
+    src: url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/632afdbf585e19218f2c06e3_PPMori-Book.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/632afdabbe834af82c88ee35_PPMori-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Arges';
+    src: url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/648f091032f94fd8cc8ba44c_Arges-NormalHeavy.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/648f08e2dc2a09b63594d82e_Arges-NormalHeavy.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Arges Normal';
+    src: url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/648f0bfec67475da7bef8fec_Arges-NormalBold.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/648f0bf171fe99d596081c34_Arges-NormalBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Blackstone';
+    src: url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/6490b65d6f10b24bc0356438_Blackstone.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  } */
