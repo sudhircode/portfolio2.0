@@ -2,7 +2,7 @@ import React from 'react'
 import style from "../css component/About_me.module.css";
 export default function About_me() {
     return <>
-        <div className={style.me}>
+        <div className={style.me} id='summary'>
             <div><h2> INDIA — BASED </h2></div>
             <div><h2>JAVA FULL <span>STACK</span> </h2></div>
             <div><h2> WEB DEVELOPER  </h2> </div>

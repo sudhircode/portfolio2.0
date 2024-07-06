@@ -7,15 +7,16 @@
 
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0px;
-} */
+}
 
 .eager {
   position: absolute;
   top: 0;
   object-fit: cover;
   z-index: -1;
+
 }
 
 /* --------------------------Begin_anim------------------- */
@@ -37,8 +38,8 @@
 
 }
 
-@keyframes img{
-  100%{
+@keyframes img {
+  100% {
     transform: translateX(-160vw);
   }
 }

@@ -3,25 +3,22 @@ import card1 from "../assets/card6.jpg";
 import style from "../css component/Sticky_menu.module.css";
 import Skill_card from './Skill_card';
 import Portfolio from './Portfolio';
+import Journey from './Journey';
 
 export default function Sticky_menu() {
     const menuRef = useRef(null);
     let timeout;
-
     const makeSmall = () => {
         if (menuRef.current) {
             menuRef.current.classList.add(style.small);
         }
     };
-
     const makeLarge = () => {
         if (menuRef.current) {
             menuRef.current.classList.remove(style.small);
+            setTimeout(makeSmall, 4000);
         }
-        clearTimeout(timeout);
-        timeout = setTimeout(makeSmall, 3000);
     };
-
     useEffect(() => {
         const checkVisibility = () => {
             if (menuRef.current) {
@@ -33,13 +30,11 @@ export default function Sticky_menu() {
                 }
             }
         };
-
         window.addEventListener('scroll', checkVisibility);
         return () => {
             window.removeEventListener('scroll', checkVisibility);
         };
     }, []);
-
 
     const cards = [
         {
@@ -59,50 +54,18 @@ export default function Sticky_menu() {
             name: "",
             icon: "json"
         },
-        {
-            img: card1,
-            name: "",
-            icon: ""
-        },
-        {
-            img: card1,
-            name: "",
-            icon: ""
-        },
-        {
-            img: card1,
-            name: "",
-            icon: ""
-        },
-        {
-            img: card1,
-            name: "",
-            icon: ""
-        },
-        {
-            img: card1,
-            name: "",
-            icon: ""
-        },
-        {
-            img: card1,
-            name: "",
-            icon: ""
-        }
-    ];
 
+    ];
     return (
         <div className={style.container}>
             <div className={style.skill}>
                 <Portfolio />
-                {/* <Skill_card cards={cards} /> */}
+                {/* <Journey />
+                <Skill_card cards={cards} /> */}
             </div>
             <div
                 className={style.menu}
-                ref={menuRef}
-                onMouseEnter={makeLarge}
-                onMouseLeave={() => timeout = setTimeout(makeSmall, 3000)}
-                onClick={makeLarge}>
+                ref={menuRef} onMouseEnter={makeLarge} onClick={makeLarge}>
                 <div className={style.scrollable_div}>
                     <div>PORT FOLIO</div>
                     <div>JOURNEY</div>

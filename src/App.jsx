@@ -1,11 +1,19 @@
 import React from 'react'
-import Style from './Style.module.css';
 import Begin_anim from './Components/Begin_anim'
 import { useState, useEffect } from 'react';
 import Home from './Components/Home';
 
 export default function App() {
-
+  const [colors, setColors] = useState({
+    backgroundColor: '#192928',
+    color: '#bfea88',
+  });
+  const toggleColors = () => {
+    setColors((prevColors) => ({
+      backgroundColor: prevColors.backgroundColor === '#192928' ? '#FCF8F3' : '#192928',
+      color: prevColors.color === '#bfea88' ? '#192928' : '#bfea88',
+    }));
+  };
   const [showFirstComponent, setShowFirstComponent] = useState(true);
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -16,9 +24,9 @@ export default function App() {
   }, []);
 
   return <>
-    <main style={{ backgroundColor: '#192928' }}>
+    <main>
       {showFirstComponent && <Begin_anim />}
-      {!showFirstComponent && <Home />}
+      {!showFirstComponent && <Home colors={colors} toggleColors={toggleColors} />}
     </main>
   </>
 }

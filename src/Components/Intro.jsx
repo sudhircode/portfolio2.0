@@ -1,17 +1,16 @@
 import React from 'react'
 import Style from "../css component/Intro.module.css"
-import img from "../assets/download (1).png";
 export default function Intro() {
     return <>
         <main className={Style.main}>
             <div className={Style.intro_main}>
-                <div className={Style.box}>
-                    <span className={Style.span}>LINKDIN</span>
-                    <h2 className={Style.h2}> INFO</h2>
+                <div className={Style.box1}>
+                    <a href="#" className={Style.span}>LINKDIN</a>
+                    <a href="#" className={Style.h2}>INFO</a>
                 </div>
-                <div className={Style.box} style={{textAlign:'end'}}>
-                    <span className={Style.span} >INSTGRAM</span>
-                    <h2 className={Style.h2}>WORKS </h2>
+                <div className={Style.box1} style={{ textAlign: 'end' }}>
+                    <a href="#" className={Style.span}>INSTGRAM</a>
+                    <a href="#" className={Style.h2}>WORKS</a>
                 </div>
             </div>
             <div className={Style.my_name}>
@@ -20,11 +19,12 @@ export default function Intro() {
             </div>
             <div className={Style.intro_about}>
                 <div className={`${Style.box} ${Style.img}`} >
-                    <h3 className={Style.span}>Prevoius Portfolio </h3>
+                    <a href="https://sudhircode.github.io/portfolio/" target="" className={`${Style.span} ${Style.hove}`}>Previous Portfolio</a>
                 </div>
-                <div className={`${Style.box} ${Style.img}`} style={{textAlign:'end'}}>
+                <div className={`${Style.box} ${Style.img2}`} style={{ textAlign: 'end' }}>
                     <span className={Style}></span>
-                    <h3 className={Style.span}> Latest Work</h3>
+                    <a href="#" className={Style.span}>Latest Work</a>
+                    <h3 className={Style.span}> </h3>
                 </div>
             </div>
         </main >

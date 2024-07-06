@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Journey() {
   return (
-    <div>Journey</div>
+    <div id='journey'>Journey</div>
   )
 }

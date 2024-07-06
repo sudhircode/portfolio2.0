@@ -2,7 +2,6 @@
 
 .main {
     width: 95vw;
-    /* height: 100vh; */
     margin: auto;
     padding-top: 40px;
     color: #bfea88;
@@ -16,18 +15,26 @@
 
 .span {
     font-size: clamp(1.1rem, 1.7vw, 2rem);
-    font-weight: 300;
+    font-weight: 500;
+    text-decoration: none;
+    color: #bfea88;
+    transition: .3s ease-in-out;    
+
 }
 
 .h2 {
     margin-top: -25px;
+    font-weight: 800;
     letter-spacing: -2px;
     font-size: clamp(1.7rem, 3vw, 3.5rem);
     transform: scaleY(2.2);
     transform-origin: top;
+    text-decoration: none;
+    color: #bfea88;
 }
 
 .my_name {
+    z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,10 +45,6 @@
     font-weight: 600;
     font-style: bold;
     font-size: clamp(2rem, 5vw, 3.2rem);
-    /* font-family: 'Blackstone'; 
-    src: url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/6490b65d6f10b24bc0356438_Blackstone.woff') format('woff');
-    font-weight: 900;
-    font-style: bold; */
 
 }
 
@@ -60,28 +63,38 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 10px;
+    /* padding: 10px; */
     height: 110px;
     max-width: 40vw;
     width: 16vw;
     min-width: 155px;
     border-radius: 5px;
-    /* font-family: 'Arges Normal';
-    src: url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/648f0bfec67475da7bef8fec_Arges-NormalBold.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/648f0bf171fe99d596081c34_Arges-NormalBold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap; */
+
+}
+.box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+    
+
+}
+.box:hover  .hove{
+    transition: .3s ease-in-out;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
 }
 
 .img {
-    background-image: url('../assets/previous_portfolio.png');
+    background-image: url('../assets/Screenshot.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    /* cursor: pointer; */
 }
 
 /* -------------------------SUB MENU--------------- */
-.sub {
+/* .sub {
     position: sticky;
     bottom: 0px;
     width: clamp(90px, 10vw, 250px);
@@ -92,4 +105,14 @@
 
 .sub ul {
     list-style-type: none;
-}
+} */
+
+/* font-family: 'Arges Normal';
+    src: url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/648f0bfec67475da7bef8fec_Arges-NormalBold.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/648f0bf171fe99d596081c34_Arges-NormalBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap; */
+/* font-family: 'Blackstone'; 
+    src: url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/6490b65d6f10b24bc0356438_Blackstone.woff') format('woff');
+    font-weight: 900;
+    font-style: bold; */

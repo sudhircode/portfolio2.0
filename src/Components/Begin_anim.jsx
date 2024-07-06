@@ -10,7 +10,7 @@ export default function ImageRow() {
         const options = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.5 // Adjust this value as needed
+            threshold: 0.5
         };
 
         observerRef.current = new IntersectionObserver((entries) => {
