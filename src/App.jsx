@@ -18,18 +18,15 @@ export default function App() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowFirstComponent(false);
-    }, 5000);
+    }, 1000);
 
     return () => clearTimeout(timeout);
   }, []);
 
   return <>
     <main>
-    <Begin_anim />
-    helllo testing
-    {/* <Home/> */}
-      {/* {showFirstComponent && <Begin_anim />}
-      {!showFirstComponent && <Home colors={colors} toggleColors={toggleColors} />} */}
+      {showFirstComponent && <Begin_anim />}
+      {!showFirstComponent && <Home colors={colors} toggleColors={toggleColors} />}
     </main>
   </>
 }

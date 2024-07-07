@@ -91,7 +91,7 @@ nav ul li:hover,
     min-width: 24px;
     height: 24px;
     border-radius: 55%;
-    margin-top: -.5px;
+    margin-top: -1px;
     border: 1.5px solid cornflowerblue;
     z-index: 2;
     transition: .3s ease-in-out;
