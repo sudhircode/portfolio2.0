@@ -10,7 +10,7 @@ import Footer from './Footer';
 export default function Home({ toggleColors, colors }) {
 
     return <>
-        <main style={{
+        <div style={{
             paddingBottom: '30px',
             backgroundColor: colors.backgroundColor,
             color: colors.color
@@ -24,6 +24,6 @@ export default function Home({ toggleColors, colors }) {
             <Sticky_menu />
             <About_my_work />
             <Footer />
-        </main>
+        </div>
     </>
 }
