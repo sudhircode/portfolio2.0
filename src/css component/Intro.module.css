@@ -18,7 +18,7 @@
     font-weight: 500;
     text-decoration: none;
     color: #bfea88;
-    transition: .3s ease-in-out; 
+    transition: .3s ease-in-out;
 
 }
 
@@ -63,24 +63,48 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* padding: 10px; */
     height: 110px;
     max-width: 40vw;
     width: 16vw;
     min-width: 155px;
     border-radius: 5px;
+    padding: 5px;
+    font-size: clamp(1.2rem, 1.7vw, 2.5rem);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: 140%;
+    transition: transform 0.5s ease;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+.box:hover::before {
+    transform: scale(1.2);
+    z-index: -1;
 
 }
+
 .box1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 15px;
-    
 
 }
-.box:hover  .hove{
-    transition: .3s ease-in-out;
+
+.box:hover {
     backdrop-filter: blur(30px);
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
 }
@@ -90,29 +114,4 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* cursor: pointer; */
 }
-
-/* -------------------------SUB MENU--------------- */
-/* .sub {
-    position: sticky;
-    bottom: 0px;
-    width: clamp(90px, 10vw, 250px);
-    background-color: violet;
-    font-size: clamp(1.1rem, 1.7vw, 2rem);
-    font-weight: 300;
-}
-
-.sub ul {
-    list-style-type: none;
-} */
-
-/* font-family: 'Arges Normal';
-    src: url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/648f0bfec67475da7bef8fec_Arges-NormalBold.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/648f0bf171fe99d596081c34_Arges-NormalBold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap; */
-/* font-family: 'Blackstone'; 
-    src: url('https://uploads-ssl.webflow.com/6201a8e3c7f99b635572faff/6490b65d6f10b24bc0356438_Blackstone.woff') format('woff');
-    font-weight: 900;
-    font-style: bold; */

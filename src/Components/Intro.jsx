@@ -5,12 +5,12 @@ export default function Intro() {
         <main className={Style.main}>
             <div className={Style.intro_main}>
                 <div className={Style.box1}>
-                    <a href="#" className={Style.span}>LINKDIN</a>
-                    <a href="#" className={Style.h2}>INFO</a>
+                    <a href="https://www.linkedin.com/in/kumarsudhir2023/" target='_blank' className={Style.span}>LINKDIN</a>
+                    <a href="https://www.linkedin.com/in/kumarsudhir2023/" target='_blank' className={Style.h2}>INFO</a>
                 </div>
                 <div className={Style.box1} style={{ textAlign: 'end' }}>
-                    <a href="#" className={Style.span}>INSTGRAM</a>
-                    <a href="#" className={Style.h2}>WORKS</a>
+                    <a href="https://www.instagram.com/redum01_x_sudhir/" target='_blank' className={Style.span}>INSTGRAM</a>
+                    <a href="https://www.instagram.com/redum01_x_sudhir/" target='_blank' className={Style.h2}>WORKS</a>
                 </div>
             </div>
             <div className={Style.my_name}>
@@ -18,13 +18,11 @@ export default function Intro() {
                 <span>Full Stack Developer 🚀🌍</span>
             </div>
             <div className={Style.intro_about}>
-                <div className={`${Style.box} ${Style.img}`} >
-                    <a href="https://sudhircode.github.io/portfolio/" target="" className={`${Style.span} ${Style.hove}`}>Previous Portfolio</a>
+                <div className={`${Style.box} ${Style.img}`} onClick={() => window.open('https://sudhircode.github.io/portfolio/', '_blank')}>
+                    Previous Portfolio
                 </div>
-                <div className={`${Style.box} ${Style.img2}`} style={{ textAlign: 'end' }}>
-                    <span className={Style}></span>
-                    <a href="#" className={Style.span}>Latest Work</a>
-                    <h3 className={Style.span}> </h3>
+                <div className={`${Style.box} ${Style.img2}`} style={{ textAlign: 'end' }} onClick={() => window.open('https://sudhircode.github.io/portfolio/', '_blank')}>
+                    Latest Work
                 </div>
             </div>
         </main >

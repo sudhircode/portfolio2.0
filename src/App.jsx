@@ -26,7 +26,8 @@ export default function App() {
   return <>
     <main>
       {showFirstComponent && <Begin_anim />}
-      {!showFirstComponent && <Home colors={colors} toggleColors={toggleColors} />}
+      <Begin_anim />
+      {/* {!showFirstComponent && <Home colors={colors} toggleColors={toggleColors} />} */}
     </main>
   </>
 }
