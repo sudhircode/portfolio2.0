@@ -18,10 +18,10 @@ export default function Intro() {
                 <span>Fronted Developer 🚀🌍</span>
             </div>
             <div className={Style.intro_about}>
-                <div className={`${Style.box} ${Style.img}`} onClick={() => window.open('https://sudhircode.github.io/portfolio/', '_blank')}>
+                <div className={`${Style.box} ${Style.img}`} onClick={() => window.open('https://stonepediaprojects.com/', '_blank')}>
                     Previous Work
                 </div>
-                <div className={`${Style.box} ${Style.img2}`} style={{ textAlign: 'end' }} onClick={() => window.open('https://sudhircode.github.io/portfolio/', '_blank')}>
+                <div className={`${Style.box} ${Style.img2}`} style={{ textAlign: 'end' }} onClick={() => window.open('https://kaverijal.com/', '_blank')}>
                     Latest Work
                 </div>
             </div>

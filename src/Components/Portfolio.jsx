@@ -4,35 +4,43 @@ import sudhircollege from "../assets/sudhircollege.png"
 
 export default function Portfolio() {
   const portfolio = [
+
+
+    {
+      name: "Kaverijal",
+      link: "http://kaverijal.com/",
+      img: "https://picsum.photos/536/354",
+      bgcolor: "#a6daf1"
+    },
+    {
+      name: "Stonepedia Projects",
+      link: "https://stonepediaprojects.com/",
+      img: "https://picsum.photos/536/354",
+      bgcolor: "#ffde59"
+    },
     {
       name: "College Website",
       link: "https://sudhircode.github.io/sudhircollege/",
       img: sudhircollege,
-      bgcolor: "rgb(158, 152, 130)"
+      bgcolor: "#95caf4"
     },
     {
-      name: "College Website",
-      link: "",
+      name: "The Scan Centre",
+      link: "https://thescancentre.in/",
       img: "https://picsum.photos/536/354",
-      bgcolor: "rgb(98, 45, 33)"
+      bgcolor: "#296de9"
     },
     {
-      name: "College Website",
-      link: "",
+      name: "Anjali Makeover Mantras",
+      link: "https://anjalimakeovermantras.com/",
       img: "https://picsum.photos/536/354",
-      bgcolor: "rgb(107, 144, 101)"
+      bgcolor: "#f90e4e"
     },
     {
-      name: "College Website",
+      name: "Upcoming Project",
       link: "",
       img: "https://picsum.photos/536/354",
-      bgcolor: "rgb(135, 180, 178)"
-    },
-    {
-      name: "College Website",
-      link: "",
-      img: "https://picsum.photos/536/354",
-      bgcolor: "rgb(188, 130, 147)"
+      bgcolor: "#ffde59"
     }
   ];
 
