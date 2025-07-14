@@ -63,16 +63,6 @@ export default function Sticky_menu() {
                 {/* <Journey />
                 <Skill_card cards={cards} /> */}
             </div>
-            <div
-                className={style.menu}
-                ref={menuRef} onMouseEnter={makeLarge} onClick={makeLarge}>
-                <div className={style.scrollable_div}>
-                    <div>PORT FOLIO</div>
-                    <div>JOURNEY</div>
-                    <div>SKILL</div>
-                    <div>SOCIAL MEDIA</div>
-                </div>
-            </div>
         </div>
     );
 }

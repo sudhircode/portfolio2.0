@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import style from '../css component/Header.module.css';
+import resume from '../assets/resume.pdf';
 
 function Header({ toggleColors }) {
   const buttonRef = useRef(null);
@@ -40,8 +41,8 @@ function Header({ toggleColors }) {
         <h1>&nbsp;*<span><a href="#" title="My Name 😎">Sudhir </a></span></h1>
         <nav>
           <ul>
-            <li><a href="#summary" title="about-me" >About</a></li>
-            <li><a href="#" title="Resume">Resume</a></li>
+            <li><a href="#" title="about-me" >Skill</a></li>
+            <li><a href={resume} target='_blank' title="Resume">Resume</a></li>
             <li><a href="#portfolio" title="Portfolio" >Portfolio</a></li>
             <li><a href="#footer" title="Contact">Contact</a></li>
           </ul>
@@ -54,8 +55,8 @@ function Header({ toggleColors }) {
       </header>
       <div ref={menuRef} className={style.menu_bar}>
         <ul>
-          <li><a href="#summary" title="about-me">About</a></li>
-          <li><a href="#" title="Resume">Resume</a></li>
+          <li><a href="#" title="about-me">Skill</a></li>
+          <li><a href={resume} target='_blank' title="Resume">Resume</a></li>
           <li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
           <li><a href="#footer" title="Contact">Contact</a></li>
         </ul>

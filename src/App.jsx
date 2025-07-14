@@ -5,8 +5,8 @@ import Home from './Components/Home';
 
 export default function App() {
   const [colors, setColors] = useState({
-    backgroundColor: '#192928',
-    color: '#bfea88',
+    backgroundColor: '#FCF8F3',
+    color: '#192928',
   });
   const toggleColors = () => {
     setColors((prevColors) => ({
@@ -25,9 +25,7 @@ export default function App() {
 
   return <>
     <main>
-      {showFirstComponent && <Begin_anim />}
-      <Begin_anim />
-      {/* {!showFirstComponent && <Home colors={colors} toggleColors={toggleColors} />} */}
+      <Home colors={colors} toggleColors={toggleColors} />
     </main>
   </>
 }

@@ -16,7 +16,7 @@ export default function Home({ toggleColors, colors }) {
             color: colors.color
         }}>
             <div style={{ paddingBottom: '50px', position: 'relative', zIndex: '2' }}>
-                <img src={bg} loading='eager' width="100%" height="100%" alt="background img" className={Style.eager} />
+                <img src={bg} loading='eager' width="90%" height="90%" alt="background img" className={Style.eager} />
                 <Header colors={colors} toggleColors={toggleColors} />
                 <Intro />
             </div>

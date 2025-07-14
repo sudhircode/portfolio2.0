@@ -5,8 +5,8 @@ export default function Intro() {
         <main className={Style.main}>
             <div className={Style.intro_main}>
                 <div className={Style.box1}>
-                    <a href="https://www.linkedin.com/in/kumarsudhir2023/" target='_blank' className={Style.span}>LINKDIN</a>
-                    <a href="https://www.linkedin.com/in/kumarsudhir2023/" target='_blank' className={Style.h2}>INFO</a>
+                    <a href="#" target='_blank' className={Style.span}>GRAPHIC</a>
+                    <a href="#" target='_blank' className={Style.h2}>DESIGN</a>
                 </div>
                 <div className={Style.box1} style={{ textAlign: 'end' }}>
                     <a href="https://www.instagram.com/redum01_x_sudhir/" target='_blank' className={Style.span}>INSTGRAM</a>
@@ -15,11 +15,11 @@ export default function Intro() {
             </div>
             <div className={Style.my_name}>
                 <h2>Hi, I'm Sudhir Kumar</h2>
-                <span>Full Stack Developer 🚀🌍</span>
+                <span>Fronted Developer 🚀🌍</span>
             </div>
             <div className={Style.intro_about}>
                 <div className={`${Style.box} ${Style.img}`} onClick={() => window.open('https://sudhircode.github.io/portfolio/', '_blank')}>
-                    Previous Portfolio
+                    Previous Work
                 </div>
                 <div className={`${Style.box} ${Style.img2}`} style={{ textAlign: 'end' }} onClick={() => window.open('https://sudhircode.github.io/portfolio/', '_blank')}>
                     Latest Work

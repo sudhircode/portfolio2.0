@@ -36,7 +36,7 @@ export default function About_my_work() {
                 <div className={style.shit}>
                     <div>MAKING</div>
                     <div>GOOD</div>
-                    <div>SHIT</div>
+                    <div>THINGS</div>
                     <div>SINCE 2019</div>
                     <h6>let's change the world</h6>
                 </div>
